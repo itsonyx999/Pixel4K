@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Pixel4K Studio</title>
+    <style>
+      /* Custom cursor for pixel precision */
+      .pixel-cursor {
+        cursor: crosshair;
+      }
+      /* Prevent touch scrolling and bounce effects */
+      body {
+        overscroll-behavior: none;
+        touch-action: none;
+      }
+      canvas {
+        touch-action: none;
+      }
+      /* Hide scrollbar for chrome/safari/opera */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+</head>
+  <body class="bg-slate-950 text-white overflow-hidden h-screen w-screen fixed">
+    <div id="root" class="h-full w-full"></div>
+  <script type="module" src="./index.tsx"></script>
+</body>
+</html>
